@@ -11,6 +11,11 @@ import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
+import FormControlLabel from "@mui/material/FormControlLabel";
+
+//import image from assets
+import ucsclogo from "../assets/ucsc.png";
+
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -43,17 +48,28 @@ function LoginForm() {
             alignItems: "center",
           }}
         >
-          <Avatar
+          <Box
             sx={{
               m: 1,
-              bgcolor: "secondary.main",
             }}
           >
-            <LockOutlinedIcon />
-          </Avatar>
+            <img 
+              src={ucsclogo}
+              alt="UCSC logo"
+              style={
+                {
+                  width: "150px",
+                  height: "150px",
+                  display: "block",
+                  margin: "auto",
+                }
+              
+              } />
+            
+          </Box>
 
-          <Typography component="h1" variant="h4">
-            Sign in
+          <Typography component="h1" variant="h5">
+            Board of Survey - Admin Panel
           </Typography>
 
           <Box
@@ -86,9 +102,21 @@ function LoginForm() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-            
             />
-            <button type="submit">Login</button>
+
+            {/* <FormControlLabel
+              control={<Checkbox value="remember" color="primary" />}
+              label="Remember me"
+            /> */}
+
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Sign In
+            </Button>
           </Box>
         </Box>
       </Container>
