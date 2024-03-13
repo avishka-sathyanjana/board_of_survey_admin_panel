@@ -13,6 +13,7 @@ function AdminDashboard() {
     <Container maxWidth="lg">
     <Typography variant="h4" sx={{
       marginBottom: 2,
+      marginLeft:5
     }}>
         Admin Dashboard
       </Typography>
