@@ -12,11 +12,14 @@ function DashboardCard(props) {
         <Card
         sx={{
           //add margin top and bottom
-          marginTop: 5,
-          marginBottom: 5,
+          margin: 2,
 
           minWidth: 500,
           maxWidth: 700,
+
+          //add shadow
+          boxShadow: 4,
+          //add fade shadow
 
           
         }}
@@ -37,7 +40,8 @@ function DashboardCard(props) {
             alt={props.imageAlt}
             sx={
                 {
-                    width: 200,
+                    width: 120,
+                    height: 120,
                 }
             }
             
