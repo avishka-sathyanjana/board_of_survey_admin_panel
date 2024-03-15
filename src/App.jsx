@@ -4,10 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LoginForm from './components/LoginForm'
 import AdminDashboard from './components/AdminDashboard'
+import AddUser from './pages/addUserPage'
 
 function App() {
    return(
-      <AdminDashboard />
+      // <AdminDashboard />
+      // <LoginForm/>
+      <AddUser />
    )
 }
 
