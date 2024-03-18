@@ -11,11 +11,10 @@ import Container from "@mui/material/Container";
 function AdminDashboard() {
   return (
     <Container maxWidth="lg">
-    <Typography variant="h4" sx={{
-      marginBottom: 2,
+    <Typography component="h1" variant="h5" align="left" sx={{
       marginLeft:5
     }}>
-        Admin Dashboard
+        Dashboard
       </Typography>
 
       <Grid 

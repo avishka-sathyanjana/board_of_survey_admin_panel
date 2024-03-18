@@ -9,7 +9,6 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-//import add user image
 import AddUserImage from '../assets/addUserImg2.jpg';
 
 export default function AddUserForm() {
