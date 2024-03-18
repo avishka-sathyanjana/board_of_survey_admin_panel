@@ -1,21 +1,12 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import AddUserForm from "../components/AddUserForm";
+import Container from "@mui/material/Container";
 function AddUser() {
   return (
-    <>
-      {/* <Typography
-        variant="h4"
-        style={{
-          textAlign: "center",
-          margin: "20px 0",
-        }}
-      >
-        Add User
-      </Typography> */}
-
+    <Container>
       <AddUserForm />
-    </>
+    </Container>
   );
 }
 

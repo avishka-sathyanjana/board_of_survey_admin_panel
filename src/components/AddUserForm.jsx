@@ -22,7 +22,12 @@ export default function AddUserForm() {
   };
 
   return (
-    <Grid container maxWidth="" sx={{ minWidth: '100vw' , minHeight: '100vh' }}>
+    <Grid container sx={
+      {
+        marginTop: 10
+      }
+    
+    }>
       <CssBaseline />
       {/* for the imag */}
       <Grid item xs={12} md={5} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>

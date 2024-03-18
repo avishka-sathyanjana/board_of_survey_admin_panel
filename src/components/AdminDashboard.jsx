@@ -10,12 +10,8 @@ import Container from "@mui/material/Container";
 
 function AdminDashboard() {
   return (
-    <Container maxWidth="lg">
-    <Typography component="h1" variant="h5" align="left" sx={{
-      marginLeft:5
-    }}>
-        Dashboard
-      </Typography>
+    
+    <Container >
 
       <Grid 
         container 

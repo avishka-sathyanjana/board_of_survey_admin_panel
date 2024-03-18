@@ -9,10 +9,10 @@ import ucsclogo from "../assets/ucsc.png";
 export default function Navbar() {
   return (
     
-     <AppBar color='transparent'position='fixed' sx={
+     <AppBar color='transparent'position='relative' sx={
         {
-            height: 55,
-            boxShadow: '0 2px 4px -1px rgba(0,0,0,0.3)'
+            boxShadow: 'none',
+            backgroundColor: '#f5f5f5',
             
         }
      }>

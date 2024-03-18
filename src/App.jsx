@@ -8,15 +8,17 @@ import AddUser from './pages/addUserPage'
 import UpdateAssetsPage from './pages/updateAssetsPage'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import PageLayout from './Layout/PageLayout'
 
 function App() {
    return (
       <Routes>
          <Route path="/" element={<LoginForm />} />
-         <Route path="/dashboard" element={<AdminDashboard />} />
-         <Route path="/add-user" element={<AddUser />} />
-         <Route path="/update-assets" element={<UpdateAssetsPage />} />  
-         <Route path="/navbar" element={<Navbar/>}/>
+         <Route path="/dashboard" element={<PageLayout />}>
+            <Route index element={<AdminDashboard />} />
+            <Route path="add-user" element={<AddUser />} />
+            <Route path="update-assets" element={<UpdateAssetsPage />} />  
+         </Route>
       </Routes>
    )  
 }
