@@ -1,1 +1,6 @@
 /* @import url("login-form.css"); */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }

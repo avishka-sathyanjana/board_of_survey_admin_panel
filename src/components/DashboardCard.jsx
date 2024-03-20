@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'; 
 
 
 function DashboardCard(props) {
@@ -24,47 +25,50 @@ function DashboardCard(props) {
           
         }}
       >
-        <CardActionArea
-            sx={
-                {
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }
-            
-            }>
-          <CardMedia
-            component="img"
-            image={props.addUserImg}
-            alt={props.imageAlt}
-            sx={
-                {
-                    width: 120,
-                    height: 120,
-                }
-            }
-            
+        <Link to={props.navigateTo} style={{ textDecoration: 'none'}}>
+          <CardActionArea 
+              sx={
+                  {
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                  }
+              
+              }>
+            <CardMedia
+              component="img"
+              image={props.addUserImg}
+              alt={props.imageAlt}
+              sx={
+                  {
+                      width: 120,
+                      height: 120,
+                      padding: 2,
+                  }
+              }
+              
 
-          />
-          <CardContent
-            sx={
-             {
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: 2,
-             } 
-            }>
-            <Typography gutterBottom variant="h5" component="div">
-              {props.title}
-            </Typography>
-            {/* <Typography variant="body2" color="text.secondary">
-              Welcome to the Admin Dashboard
-            </Typography> */}
-          </CardContent>
-        </CardActionArea>
+            />
+            <CardContent
+              sx={
+              {
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: 2,
+              } 
+              }>
+              <Typography gutterBottom variant="h5" component="div" color="black">
+                {props.title}
+              </Typography>
+              {/* <Typography variant="body2" color="text.secondary">
+                Welcome to the Admin Dashboard
+              </Typography> */}
+            </CardContent>
+          </CardActionArea>
+        </Link>
       </Card>
     );
 }
@@ -73,6 +77,7 @@ DashboardCard.propTypes ={
     addUserImg: PropTypes.string.isRequired,
     imageAlt: PropTypes.string,
     title: PropTypes.string.isRequired,
+    navigateTo: PropTypes.string.isRequired,
 }
 
 export default DashboardCard;

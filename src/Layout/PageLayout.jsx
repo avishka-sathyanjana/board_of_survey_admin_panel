@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 
 export default function PageLayout() {
   return (
-    <div>
+    <Box>
         <Navbar/>
 
         <Container sx={
@@ -18,6 +18,6 @@ export default function PageLayout() {
             <Outlet/>
         </Container>
 
-    </div>
+    </Box>
   )
 }

@@ -26,6 +26,7 @@ function AdminDashboard() {
             title="Add User"
             addUserImg={addUserImg}
             imageAlt="Add User"
+            navigateTo="add-user"
           />
         </Grid>
 
@@ -34,6 +35,7 @@ function AdminDashboard() {
             title="Update Assets List"
             addUserImg={addAssetsImg}
             imageAlt="Update Assets"
+            navigateTo="update-assets"
           />
         </Grid>
 

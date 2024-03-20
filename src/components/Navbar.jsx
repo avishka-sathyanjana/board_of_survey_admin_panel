@@ -12,7 +12,7 @@ export default function Navbar() {
      <AppBar color='transparent'position='relative' sx={
         {
             boxShadow: 'none',
-            backgroundColor: '#f5f5f5',
+            backgroundColor: '#f4f4f4',
             
         }
      }>

@@ -1,9 +1,12 @@
 import React from 'react';
+import FileUploader from '../components/FileUploader';
+import UpdateAssetsForm from '../components/UpdateAssetsForm';
 
 function UpdateAssetsPage() {
     return (
         <div>
-           <h1>HI hutto</h1>
+           {/* <FileUploader /> */}
+           <UpdateAssetsForm />
         </div>
     );
 }
